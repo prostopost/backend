@@ -7,9 +7,9 @@ var courierSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    email: Sting,
     autoType: Number,   //one of many autotypes
     auto: String,   //full auto description(he fill its self)
-    autoId: Number, //auto id from autos models
     isFree: Boolean,    //if courier is full free, he can take hot orders
     license: String,    //pay tax?
     birthDay: Number,   //gratuliations programm is cool
