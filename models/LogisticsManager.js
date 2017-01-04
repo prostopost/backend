@@ -14,19 +14,21 @@ var userSchema = {
 };
 
 /**
- * Пользователь - это обычный клиент компании или курьера. Просто лид.
+ * Менеджер по логистике, диспетчер
+ * 
+ * Диспетчер может общаться с клиентами.
  */
-var Manager = module.exports = mongoose.model("Manager", userSchema);
+var LogisticManager = module.exports = mongoose.model("LogisticManger", userSchema);
 
 /**
- * Регистрация нового пользователя
+ * Регистрация нового диспетчера
  */
 module.exports.registerManager = function (newUser, callback) {
     newUser.save(callback);
 };
 
 /**
- * Находим пользователя
+ * Находим диспетчера
  */
 module.exports.findManagers = function (query, callback) {
     Courier.find(query, callback);

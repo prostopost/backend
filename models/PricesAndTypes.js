@@ -7,7 +7,7 @@ var patSchema = {
     price: String
 
 };
-
+ 
 /**
  * Цены и типы услуг
  */
