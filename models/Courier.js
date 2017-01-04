@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 
 var courierSchema = mongoose.Schema({
+    _id: ObjectId,
     name: String,   //courier name
     lastname: String,   //courier last name
     regDate: {  //registration date.

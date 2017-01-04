@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 
 var autoSchema = mongoose.Schema({
+    _id: ObjectId,
     reg: String,
     brand: String,
     type: Number,
