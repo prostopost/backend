@@ -6,16 +6,20 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require("mongoose");
 
+//routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var admin = require('./routes/admin');
+
 var config = require('./config');
 
+
 var app = express();
-mongoose.connect(config.mongo.connectString);
+mongoose.connect(config.mongo.localhostConnectionString);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -27,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/admin', admin);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -59,7 +64,7 @@ app.use(function (err, req, res, next) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(3030, function () {
   console.log("Launched");
 });
 
