@@ -6,10 +6,12 @@ var http = require('http');
  * Ошибки для выдачи посетителю
  */
 function HttpError(status, message) {
+    //extends error
     Error.apply(this, arguments);
     Error.captureStackTrace(this, HttpError);
 
     this.status = status;
+    //method - необязателен.
     this.message = message || http.STATUS_CODES[status] || "Error";
 }
 

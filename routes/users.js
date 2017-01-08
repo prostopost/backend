@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../models/User');
+var HttpError = require('../error').HttpError;
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
@@ -15,6 +16,9 @@ router.get('/', function (req, res, next) {
 router.get('/users/:id', function (req, res, next) {
   User.findById(req.params.id, function (err, user) {
     if (err) { return next(err); }
+    if (!user) {
+      next(new HttpError(404, "User not found"));
+    }
     res.json(user);
   });
 });
