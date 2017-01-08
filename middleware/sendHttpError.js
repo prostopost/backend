@@ -3,7 +3,7 @@ module.exports = function (req, res, next) {
     res.sendHttpError = function (error) {
         res.status(err.status);
 
-        //если используется запрос AJAX, отправляе json.
+        //если используется запрос AJAX, отправляе json. 
         if (res.req.headers['x-requested-with'] === 'XMLHttpRequest') {
             res.json(error);
         } else {
