@@ -1,12 +1,32 @@
 var mongoose = require("mongoose");
 
 var userSchema = {
-    _id: ObjectId,
-    name: String,
-    lastname: String,
-    email: String,
-    phone: String,
-    company: String,
+    name: {
+        type: String,
+        required: true
+    },
+    lastname: {
+        required: true,
+        type: String
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: false
+    },
+    phone: {
+        required: false,
+        type: String,
+        unique: true
+    },
+    company: {
+        required: false,
+        type: String,
+    },
     birthday: {
         type: Date,
         default: null
@@ -15,7 +35,7 @@ var userSchema = {
 };
 
 /**
- * Пользователь - это обычный клиент компании или курьера. Просто лид.
+ * Пользователь - это обычный клиент компании или курьера. Просто лид. Сюда записывать все контактные данные.
  */
 var User = module.exports = mongoose.model("User", userSchema);
 
@@ -29,6 +49,6 @@ module.exports.registerUser = function (newUser, callback) {
 /**
  * Находим пользователя
  */
-module.exports.findUsers = function (query, callback) {
-    Courier.find(query, callback);
+module.exports.findUser = function (query, callback) {
+    User.findOne(query, callback);
 };

@@ -1,0 +1,38 @@
+extends ../layout.pug
+
+block title
+    | Регистрация
+
+block content
+    .row
+        .col-md-6
+            h3.text-center Войти
+            form(action="" method="POST")
+                .input-group.animated.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='500ms')
+                    span#basic-addon1.input-group-addon @
+                        |  
+                    input.form-control(name='email', type='text', placeholder='Email', aria-describedby='basic-addon1')
+                .input-group.animated.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='500ms')
+                    span#basic-addon2.input-group-addon P
+                        |  
+                    input.form-control(name='password', type='password', placeholder='пароль', aria-describedby='basic-addon2')
+                .button.btn.btn-success(type='submit') Войти
+
+        .col-md-6
+            h3.text-center Зарегистрироваться
+            form(action="" method="POST")
+                .row
+                    .col-md-6
+                        input.form-control(name='username', type='text', placeholder='Ваше имя')
+                    .col-md-6
+                        input.form-control(name='lastname', type='text', placeholder='Ваша фамилия')
+                    
+                .input-group.animated.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='500ms')
+                    span#basic-addon1.input-group-addon @
+                        |  
+                    input.form-control(name='email', type='text', placeholder='Email', aria-describedby='basic-addon1')
+                .input-group.animated.wow.fadeInUp(data-wow-duration='1000ms', data-wow-delay='500ms')
+                    span#basic-addon2.input-group-addon P
+                        |  
+                    input.form-control(name='password', type='password', placeholder='пароль', aria-describedby='basic-addon2')
+                .button.btn.btn-success(type='submit') Войти

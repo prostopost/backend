@@ -1,0 +1,512 @@
+doctype html
+html
+  head
+    title
+      | Plottage a Real Estate Category Flat Bootstrap Responsive Website Template | Home :: w3layouts
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Plottage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    script(type='text/javascript', src='js/jquery-2.1.4.min.js')
+    link(href='//fonts.googleapis.com/css?family=Quicksand:400,300,700', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+  body
+    .header
+      .header-top
+        .container
+          .header-top-left
+            ul
+              li
+                span.glyphicon.glyphicon-earphone(aria-hidden='true')
+                | +0123 345 569
+              li
+                a(href='mailto:info@example.com')
+                  span.glyphicon.glyphicon-envelope(aria-hidden='true')
+                  | info@example.com
+          .header-top-left1
+            ul.social-icons
+              li
+                a.icon.icon-border.facebook(href='#')
+              li
+                a.icon.icon-border.twitter(href='#')
+              li
+                a.icon.icon-border.instagram(href='#')
+              li
+                a.icon.icon-border.pinterest(href='#')
+          .header-top-right
+            .search
+              input#search_box.search_box(type='checkbox')
+              label.icon-search(for='search_box')
+                span.glyphicon.glyphicon-search(aria-hidden='true')
+              .search_form
+                form(action='#', method='post')
+                  input(type='text', name='Search', placeholder='Search...')
+                  |  
+                  input(type='submit', value=' ')
+          .clearfix
+      .header-bottom
+        .container
+          nav.navbar.navbar-default
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              .logo
+                h1
+                  a.navbar-brand(href='index.html')
+                    | Plottage 
+                    span Real Estate
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-wil
+              nav
+                ul.nav.navbar-nav
+                  li.active
+                    a(href='index.html') Home
+                  li
+                    a.hvr-bounce-to-bottom(href='services.html') Services
+                  li
+                    a.hvr-bounce-to-bottom(href='gallery.html') Gallery
+                  li
+                    a.hvr-bounce-to-bottom(href='short-codes.html') Short Codes
+                  li
+                    a.hvr-bounce-to-bottom(href='mail.html') Mail Us
+    .banner
+      .container
+        .banner-left
+          h3 the easiest way to find your dream home
+          p Excepteur sint occaecat cupidatat.
+        .banner-right
+          h3
+            span Search For Home
+          .reservation
+            .section_room
+              span.glyphicon.glyphicon-map-marker(aria-hidden='true')
+              |  
+              select#country.frm-field.required(onchange='change_country(this.value)')
+                option(value='null') Location
+                option(value='null') Denmark
+                option(value='AX') Sweden
+                option(value='AX') New Zealand
+                option(value='AX') America
+                option(value='AX') Australia
+            .section_room
+              span.glyphicon.glyphicon-home(aria-hidden='true')
+              |  
+              select#country1.frm-field.required(onchange='change_country(this.value)')
+                option(value='null') Type of property
+                option(value='null') Property1
+                option(value='AX') Property2
+                option(value='AX') Property3
+                option(value='AX') Property4
+                option(value='AX') Property5
+            .reservation-grids
+              .reservation-grid-left
+                .section_room
+                  span.tent
+                  |  
+                  select#country2.frm-field.required(onchange='change_country(this.value)')
+                    option(value='null') Bedrooms
+                    option(value='null') 1
+                    option(value='AX') 2
+                    option(value='AX') 3
+                    option(value='AX') 4
+                    option(value='AX') More
+              .reservation-grid-right
+                .section_room
+                  span.bath
+                  |  
+                  select#country3.frm-field.required(onchange='change_country(this.value)')
+                    option(value='null') Baths
+                    option(value='null') Any
+                    option(value='AX') 2
+                    option(value='AX') 3
+                    option(value='AX') 4
+                    option(value='AX') More
+              .clearfix
+            .reservation-grids
+              .reservation-grid-left
+                .section_room
+                  span.glyphicon.glyphicon-yen(aria-hidden='true')
+                  |  
+                  select#country2.frm-field.required(onchange='change_country(this.value)')
+                    option(value='null') Price From Min
+                    option(value='null') No Minimum
+                    option(value='AX') 1000Yen
+                    option(value='AX') 3000Yen
+                    option(value='AX') 4000Yen
+                    option(value='AX') 5000Yen
+              .reservation-grid-right
+                .section_room
+                  span.glyphicon.glyphicon-yen(aria-hidden='true')
+                  |  
+                  select#country3.frm-field.required(onchange='change_country(this.value)')
+                    option(value='null') Price From Max
+                    option(value='null') Any
+                    option(value='AX') 15000Yen
+                    option(value='AX') 25000Yen
+                    option(value='AX') 35000Yen
+                    option(value='AX') More
+              .clearfix
+            .keywords
+              form(action='#', method='post')
+                span.glyphicon.glyphicon-list-alt(aria-hidden='true')
+                |  
+                input(type='text', name='Key Words', placeholder='Key Words', required=' ')
+                |  
+                input(type='submit', value='Search')
+        .clearfix
+    .about
+      .container
+        h3
+          span About Us
+        p.autem Who we are
+        .about-grids
+          p.delectus
+            | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+          .col-md-3.about-grid
+            figure
+              img.img-responsive(src='images/1.jpg', alt=' ')
+              figcaption
+                h4 James Willy
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+                ul.social-icons
+                  li
+                    a.icon.icon-border.facebook(href='#')
+                  li
+                    a.icon.icon-border.twitter(href='#')
+                  li
+                    a.icon.icon-border.instagram(href='#')
+          .col-md-3.about-grid
+            figure
+              img.img-responsive(src='images/2.jpg', alt=' ')
+              figcaption
+                h4 Chris Michael
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+                ul.social-icons
+                  li
+                    a.icon.icon-border.facebook(href='#')
+                  li
+                    a.icon.icon-border.twitter(href='#')
+                  li
+                    a.icon.icon-border.instagram(href='#')
+          .col-md-3.about-grid
+            figure
+              img.img-responsive(src='images/3.jpg', alt=' ')
+              figcaption
+                h4 Laura Li
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+                ul.social-icons
+                  li
+                    a.icon.icon-border.facebook(href='#')
+                  li
+                    a.icon.icon-border.twitter(href='#')
+                  li
+                    a.icon.icon-border.instagram(href='#')
+          .col-md-3.about-grid
+            figure
+              img.img-responsive(src='images/4.jpg', alt=' ')
+              figcaption
+                h4 Paul Bill
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+                ul.social-icons
+                  li
+                    a.icon.icon-border.facebook(href='#')
+                  li
+                    a.icon.icon-border.twitter(href='#')
+                  li
+                    a.icon.icon-border.instagram(href='#')
+          .clearfix
+        .about-grids-bottom
+          .col-md-4.about-grids-bottom-grid
+            h4 About Us
+            p
+              | Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+          .col-md-4.about-grids-bottom-grid
+            h4 Who We Are
+            p
+              | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.
+          .col-md-4.about-grids-bottom-grid
+            h4 What We Do This
+            p
+              | Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+          .clearfix
+    .about-bottom
+      .container
+        .about-bottom-grid
+          span
+        h3
+          | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        p
+          i Andrew Jackson
+    .testimonials
+      .container
+        h3
+          span Testimonials
+        p.autem maiores alias consequatur aut perferendis doloribus asperiores repellat
+        .testimonials-grids
+          .col-md-6.testimonials-grid-left
+            .wmuSlider.example1.animated.wow.slideInUp(data-wow-delay='.5s')
+              .wmuSliderWrapper
+                article(style='position: absolute; width: 100%; opacity: 0;')
+                  .banner-wrap
+                    .testimonials-grid-left-grid
+                      .testimonials-grid-left1
+                        img.img-responsive(src='images/1.png', alt=' ')
+                      .testimonials-grid-left2
+                        h4
+                          | ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+                        p 2 days ago
+                      .clearfix
+                    .testimonials-grid-left-grid
+                      .testimonials-grid-left1
+                        img.img-responsive(src='images/2.png', alt=' ')
+                      .testimonials-grid-left2
+                        h4
+                          | quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                        p 3 days ago
+                      .clearfix
+                article(style='position: absolute; width: 100%; opacity: 0;')
+                  .banner-wrap
+                    .testimonials-grid-left-grid
+                      .testimonials-grid-left1
+                        img.img-responsive(src='images/3.png', alt=' ')
+                      .testimonials-grid-left2
+                        h4
+                          | ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+                        p 3 days ago
+                      .clearfix
+                    .testimonials-grid-left-grid
+                      .testimonials-grid-left1
+                        img.img-responsive(src='images/1.png', alt=' ')
+                      .testimonials-grid-left2
+                        h4
+                          | quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                        p 4 days ago
+                      .clearfix
+                article(style='position: absolute; width: 100%; opacity: 0;')
+                  .banner-wrap
+                    .testimonials-grid-left-grid
+                      .testimonials-grid-left1
+                        img.img-responsive(src='images/2.png', alt=' ')
+                      .testimonials-grid-left2
+                        h4
+                          | ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+                        p 4 days ago
+                      .clearfix
+                    .testimonials-grid-left-grid
+                      .testimonials-grid-left1
+                        img.img-responsive(src='images/3.png', alt=' ')
+                      .testimonials-grid-left2
+                        h4
+                          | quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                        p 5 days ago
+                      .clearfix
+            script(src='js/jquery.wmuSlider.js')
+            script.
+              $('.example1').wmuSlider();
+          .col-md-6.testimonials-grid-right
+            h4 Our Skills
+            p Alias consequatur aut perferendis doloribus asperiores repellat.
+            h5 Selling
+            .progress-bar1.blue.stripes
+              span(style='width: 100%')
+            h5 Buying
+            .progress-bar1.orange.shine
+              span(style='width: 100%')
+            h5 Dealers
+            #soundlevel.progress-bar1.green.glow
+              span(style='width: 100%')
+            script.
+              $(document).ready(function(){
+              $('.quarter').click(function(){
+              $(this).parent().prev().children('span').css('width','50%');
+              });
+              $('.half').click(function(){
+              $(this).parent().prev().children('span').css('width','55%');
+              });
+              $('.three-quarters').click(function(){
+              $(this).parent().prev().children('span').css('width','75%');
+              });
+              $('.full').click(function(){
+              $(this).parent().prev().children('span').css('width','100%');
+              });
+              });
+              var intervalID = setInterval(function(){getData();}, 100);
+              var volumeLevel = 40;
+              function getData(){
+              if (volumeLevel==40)
+              {
+              volumeLevel=60
+              }else if (volumeLevel==60)
+              {
+              volumeLevel=40
+              }
+              $("#soundlevel").children('span').css('width', Math.floor(Math.random() * 100)+'%');
+              }
+              //@ sourceURL=pen.js
+          .clearfix
+    .events
+      .container
+        h3
+          span News &amp; Events
+        p.autem maiores alias consequatur aut perferendis doloribus asperiores repellat
+        .events-grids
+          .col-md-4.events-grid
+            .events-grid1.hvr-sweep-to-top
+              a(href='single.html')
+                img.img-responsive(src='images/6.jpg', alt=' ')
+              h4
+                a(href='single.html') oribus asperiores
+              ul
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-user(aria-hidden='true')
+                    | Admin
+                li
+                  span.glyphicon.glyphicon-calendar(aria-hidden='true')
+                  | May 20, 2016
+              p
+                | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+          .col-md-4.events-grid
+            .events-grid1.hvr-sweep-to-top
+              a(href='single.html')
+                img.img-responsive(src='images/8.jpg', alt=' ')
+              h4
+                a(href='single.html') iusto odio dignissi
+              ul
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-user(aria-hidden='true')
+                    | Admin
+                li
+                  span.glyphicon.glyphicon-calendar(aria-hidden='true')
+                  | May 25, 2016
+              p
+                | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+          .col-md-4.events-grid
+            .events-grid1.hvr-sweep-to-top
+              a(href='single.html')
+                img.img-responsive(src='images/7.jpg', alt=' ')
+              h4
+                a(href='single.html') tatum deleniti atque
+              ul
+                li
+                  a(href='#')
+                    span.glyphicon.glyphicon-user(aria-hidden='true')
+                    | Admin
+                li
+                  span.glyphicon.glyphicon-calendar(aria-hidden='true')
+                  | May 30, 2016
+              p
+                | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+          .clearfix
+    .footer
+      .container
+        h2 Sign up for our newsletter
+        p.para
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+        .footer-contact
+          form(action='#', method='post')
+            input(type='text', name='Email', placeholder='Enter your email to update', required=' ')
+            |  
+            input(type='submit', value='Subscribe')
+        .footer-grids
+          .col-md-4.footer-grid
+            p
+              span.glyphicon.glyphicon-map-marker(aria-hidden='true')
+              |  General Pvt 66, Dong Da Hanoi, Vietnam.
+            p
+              a(href='mailto:contact@example.com')
+                span.glyphicon.glyphicon-envelope(aria-hidden='true')
+                |  contact@example.com
+            p
+              span.glyphicon.glyphicon-earphone(aria-hidden='true')
+              | +0123 456 686
+          .col-md-2.footer-grid
+            ul
+              li
+                a(href='mail.html') Contact
+              li
+                a(href='index.html') Home
+              li
+                a(href='short-codes.html') Short Codes
+              li
+                a(href='gallery.html') Gallery
+          .col-md-3.footer-grid
+            .footer-grid1
+              .footer-grid1-left
+                a(href='single.html')
+                  img.img-responsive(src='images/7.jpg', alt=' ')
+              .footer-grid1-right
+                a(href='single.html') eveniet ut molesti
+                .m1
+                  a(href='single.html')
+                    span.glyphicon.glyphicon-play-circle(aria-hidden='true')
+              .clearfix
+            .footer-grid1
+              .footer-grid1-left
+                a(href='single.html')
+                  img.img-responsive(src='images/6.jpg', alt=' ')
+              .footer-grid1-right
+                a(href='single.html') earum rerum tenet
+                .m1
+                  a(href='single.html')
+                    span.glyphicon.glyphicon-play-circle(aria-hidden='true')
+              .clearfix
+            .footer-grid1
+              .footer-grid1-left
+                a(href='single.html')
+                  img.img-responsive(src='images/8.jpg', alt=' ')
+              .footer-grid1-right
+                a(href='single.html') maiores alias cons
+                .m1
+                  a(href='single.html')
+                    span.glyphicon.glyphicon-play-circle(aria-hidden='true')
+              .clearfix
+          .col-md-3.footer-grid
+            .footer-grid-instagram
+              a(href='single.html')
+                img.img-responsive(src='images/9.jpg', alt=' ')
+            .footer-grid-instagram
+              a(href='single.html')
+                img.img-responsive(src='images/10.jpg', alt=' ')
+            .footer-grid-instagram
+              a(href='single.html')
+                img.img-responsive(src='images/6.jpg', alt=' ')
+            .footer-grid-instagram
+              a(href='single.html')
+                img.img-responsive(src='images/7.jpg', alt=' ')
+            .clearfix
+          .clearfix
+        .footer-copy
+          p
+            | &copy; 2016 Plottage. All rights reserved | Design by 
+            a(href='http://w3layouts.com') W3layouts
+    script(src='js/bootstrap.js')
+    script(type='text/javascript').
+      $(document).ready(function() {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      */
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });

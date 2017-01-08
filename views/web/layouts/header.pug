@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    title
+      block title
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    link(href='/web/css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='/web/css/style.css', rel='stylesheet', type='text/css', media='all')
+    script(type='text/javascript', src='js/jquery-2.1.4.min.js')
+    link(href='//fonts.googleapis.com/css?family=Quicksand:400,300,700', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='/web/js/move-top.js')
+    script(type='text/javascript', src='/web/js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+  body
+    .header
+      .header-top
+        .container
+          .header-top-left
+            ul
+              li
+                span.glyphicon.glyphicon-earphone(aria-hidden='true')
+                | +0123 345 569
+              li
+                a(href='mailto:info@example.com')
+                  span.glyphicon.glyphicon-envelope(aria-hidden='true')
+                  | info@example.com
+          .header-top-left1
+            ul.social-icons
+              li
+                a.icon.icon-border.facebook(href='#')
+              li
+                a.icon.icon-border.twitter(href='#')
+              li
+                a.icon.icon-border.instagram(href='#')
+              li
+                a.icon.icon-border.pinterest(href='#')
+          .header-top-right
+            .search
+              input#search_box.search_box(type='checkbox')
+              label.icon-search(for='search_box')
+                span.glyphicon.glyphicon-search(aria-hidden='true')
+              .search_form
+                form(action='#', method='post')
+                  input(type='text', name='Search', placeholder='Search...')
+                  |  
+                  input(type='submit', value=' ')
+          .clearfix
+      .header-bottom
+        .container
+          nav.navbar.navbar-default
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              .logo
+                h1
+                  a.navbar-brand(href='index.html')
+                    | Plottage 
+                    span Real Estate
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-wil
+              nav
+                ul.nav.navbar-nav
+                  li
+                    a(href='index.html') Home
+                  li
+                    a.hvr-bounce-to-bottom(href='services.html') Services
+                  li
+                    a.hvr-bounce-to-bottom(href='gallery.html') Gallery
+                  li
+                    a.hvr-bounce-to-bottom(href='short-codes.html') Short Codes
+                  li
+                    a.hvr-bounce-to-bottom(href='mail.html') Mail Us
